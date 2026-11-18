@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Camera FOV & Frustum Planner",
+  "version": "1.0",
+  "description": "Zeichnet interaktive Kamera-Sichtfelder (FOV) auf beliebige Karten.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "Kamera-Overlay umschalten"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "camera-fov-planner@example.com",
+      "strict_min_version": "109.0"
+    }
+  }
+}
